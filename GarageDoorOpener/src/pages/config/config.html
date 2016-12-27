@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Configuração</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" stacked>Endereço Ip</ion-label>
+      <ion-input type="text" placeholder="Endereço Ip" [(ngModel)]="config.ip"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Porta</ion-label>
+      <ion-input type="number" placeholder="Porta" [(ngModel)]="config.port"></ion-input>
+    </ion-item>
+    
+    
+    <button ion-button icon-left block (click)="salvar()">
+      <ion-icon name="build"></ion-icon>
+      Salvar
+    </button>
+    
+  </ion-list>
+</ion-content>
